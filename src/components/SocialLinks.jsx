@@ -5,7 +5,7 @@ function SocialLinks() {
   return (
     <ul className="nav-icons">
       {socialLinks.map((link) => {
-        return <SocialLink {...link}></SocialLink>;
+        return <SocialLink key={link.id} {...link}></SocialLink>;
       })}
     </ul>
   );
